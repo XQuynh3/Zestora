@@ -1,4 +1,4 @@
-.offers{
+.offer{
     width: 65%;
     height: 60vh;
     display: flex;
@@ -8,26 +8,26 @@
     background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
 }
 
-.offers-left{
+.offer-left{
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.offers-left h1{
+.offer-left h1{
     font-size: 80px;
     font-weight: 600;
     color: #171717;
 }
 
-.offers-left p{
+.offer-left p{
     font-size: 22px;
     color: #171717;
     font-weight: 600;
 }
 
-.offers-left button{
+.offer-left button{
     width: 282px;
     height: 70px;
     border: none;
@@ -40,7 +40,7 @@
     cursor: pointer;
 }
 
-.offers-right{
+.offer-right{
     flex: 1;
     display: flex;
     justify-content: flex-end;

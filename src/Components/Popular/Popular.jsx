@@ -1,6 +1,7 @@
 import React from 'react'
 import './Popular.css'
-import data_product from '../Assets/data'
+import data_product from '../Assets/data.js'
+import Item from '../Items/Item.jsx'
 
 const Popular = () => {
   return (
@@ -8,8 +9,8 @@ const Popular = () => {
         <h1>POPULAR IN WOMEN</h1>
         <hr />
         <div className="popular-items">
-            {data_product.map((item, index)=>{
-                return <Item key={i} id={item.id} name={item.name} image={item.image} new_price={item.new_price} old_price={item.old_price}/>
+            {data_product.map((product, i)=>{
+                return <Item key={i} id={product.id} name={product.name} image={product.image} new_price={product.new_price} old_price={product.old_price}/>
             })}      
     </div>
     </div>
