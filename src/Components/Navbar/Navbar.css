@@ -1,8 +1,9 @@
 .navbar{
     display: flex;
     justify-content: space-around;
-    padding: 16px;
+    padding: 15px 0px;
     box-shadow: 0 1px 3px -2px black;
+    align-items: center;
 }
 
 .nav_logo{
@@ -171,12 +172,33 @@
 
     }
 
-    .nav-menu.nav_menu_visible{
+    .nav_menu_visible{
         display: flex;
     }
 
-    .nav-login-cart{
-        gap: 15px;
+    .nav-dropdown.open{
+        transform: rotate(90deg);
     }
+}
+
+@media(max-width: 500px) {
+    .navbar{
+        padding: 8px 0px;
+        gap: 0;
+    }
+
+    .nav-logo{
+        transform: scale(0.8);
+    }
+
+    .nav-menu{
+        height: 70px;
+        top: 50px;
+    }
+
+    .nav-login-cart{
+        transform: scale(0.8);
+    }
+
 }
 
